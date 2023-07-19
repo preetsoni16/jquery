@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        body  div *{
+            border: 2px solid black;
+            padding: 20px;
+            display: block;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // $("h3").siblings().css({"border": "2px solid red"})
+            // $("h3").prev().css({"border": "2px solid red"})eni upar nu hase ee
+            // $("h3").prevAll().css({"border": "2px solid red"})eni upar na badha ja 
+            // $("h3").prevUntil("h1").css({"border": "2px solid red"})h3 thi lai apde je mention karyu che tya shudi na
+            // $("h3").next().css({"border": "2px solid red"})ena pachi nu je hase ee
+            // $("h3").nextAll().css({"border": "2px solid red"})ena pachi ne badha
+            $("h3").nextUntil("h5").css({"border": "2px solid red"})
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <h1>gjhkh</h1>
+        <h2>dfmkd</h2>
+        <h3>fdjfkjf</h3>
+        <h4>dgfdgf</h4>
+        <p>sfdfdf</p>
+        <h5>dfdf</h5>
+    </div>
+</body>
+</html>
